@@ -30,6 +30,7 @@ export default function PostsRoute() {
       <ul>
         {posts.map((post) => (
           <Link
+            key={post.slug}
             prefetch="intent"
             to={post.slug}
             className="flex text-xl text-blue-600 underline"

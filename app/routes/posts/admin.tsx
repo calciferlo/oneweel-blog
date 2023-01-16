@@ -1,7 +1,8 @@
-import { getPostListing, getPosts } from "~/models/post.server";
+import { getPostListing } from "~/models/post.server";
 import invariant from "tiny-invariant";
 import { Link, Outlet, useLoaderData } from "@remix-run/react";
-import { json, LoaderFunction } from "@remix-run/node";
+import type { LoaderFunction } from "@remix-run/node";
+import { json } from "@remix-run/node";
 import { requireAdminUser } from "~/session.server";
 
 type LoaderData = {

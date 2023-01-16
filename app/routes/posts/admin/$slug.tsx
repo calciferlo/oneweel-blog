@@ -16,7 +16,7 @@ import {
 } from "~/models/post.server";
 import invariant from "tiny-invariant";
 import { requireAdminUser } from "~/session.server";
-import { Post } from "@prisma/client";
+import type { Post } from "@prisma/client";
 
 type LoaderData = {
   post?: Post;

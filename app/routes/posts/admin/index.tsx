@@ -1,5 +1,6 @@
 import { Link } from "@remix-run/react";
-import { json, LoaderFunction } from "@remix-run/node";
+import type { LoaderFunction } from "@remix-run/node";
+import { json } from "@remix-run/node";
 import { requireAdminUser } from "~/session.server";
 
 export const loader: LoaderFunction = async ({ request }) => {

@@ -1,5 +1,5 @@
 import { prisma } from "~/db.server";
-import { Post } from "@prisma/client";
+import type { Post } from "@prisma/client";
 
 export async function getPostListing() {
   return prisma.post.findMany({
