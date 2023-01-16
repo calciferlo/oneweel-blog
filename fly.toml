@@ -1,4 +1,4 @@
-app = "oneweel-blog-87af"
+app = "oneweel-blog-f10t"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = [ ]
